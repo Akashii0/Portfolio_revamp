@@ -7,8 +7,8 @@ export const AboutMeSection = ({ isDarkMode }) => {
     <section id="aboutme" className="relative w-full py-16">
       <Separator className={`absolute bottom-0 w-full ${isDarkMode ? 'bg-[#484848]' : 'bg-[#E5E5E5]'}`} />
 
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-8">
+      <div className="container mx-auto px-4 ">
+        <div className="flex lg:flex-col flex-row gap-8 ">
           <div className="md:w-1/3">
             <h2 className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}>
               About me

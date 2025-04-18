@@ -43,8 +43,8 @@ export const ContactSection = ({ isDarkMode }) => {
   ];
 
   return (
-    <section id="contact" className="flex flex-col md:flex-row w-full max-w-[1224px] items-start gap-6 py-20 mx-auto">
-      <div className="flex flex-col items-start justify-between flex-1 self-stretch">
+    <section id="contact" className="flex flex-col lg:flex-row lg:w-full w-[90%]  lg:max-w-[1224px] items-start gap-6 py-20 mx-auto">
+      <div className="flex  lg:flex-col items-start justify-between flex-1 self-stretch">
         <div className="flex flex-col items-start gap-10 w-full">
           <div className="flex flex-col items-start gap-4 w-full">
             <h2 className={`font-heading-two font-[number:var(--heading-two-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[length:var(--heading-two-font-size)] tracking-[var(--heading-two-letter-spacing)] leading-[var(--heading-two-line-height)] [font-style:var(--heading-two-font-style)]`}>
@@ -124,7 +124,7 @@ export const ContactSection = ({ isDarkMode }) => {
         method="POST"
         className="contents" // 👈 This preserves layout!
       >
-        <div className="flex flex-col items-start gap-12 flex-1">
+        <div className="flex flex-col items-start gap-12 flex-1  w-full">
           <div className="flex flex-col items-start gap-10 w-full">
             <div className="flex flex-col items-start gap-6 w-full">
               {formFields.map((field) => (
