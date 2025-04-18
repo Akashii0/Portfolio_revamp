@@ -40,9 +40,9 @@ export const Experiences = ({ isDarkMode }) => {
                     }`}
             />
 
-            <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row gap-8">
-                    <div className="md:w-1/3">
+            <div className=" mx-auto w-[90%]">
+                <div className="flex flex-col lg:flex-row gap-8">
+                    <div className="lg:w-1/3">
                         <h2
                             className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? "text-neutralwhite" : "text-neutralblack"
                                 } text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}
@@ -51,7 +51,7 @@ export const Experiences = ({ isDarkMode }) => {
                         </h2>
                     </div>
 
-                    <div className="md:w-2/3 flex flex-col gap-12">
+                    <div className="lg:w-2/3 flex flex-col gap-12">
                         {experienceData.map((exp, index) => (
                             <div
                                 key={index}
