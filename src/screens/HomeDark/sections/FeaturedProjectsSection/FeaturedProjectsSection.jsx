@@ -42,7 +42,7 @@ export const FeaturedProjectsSection = ({ isDarkMode }) => {
   return (
     <section id="work" className="w-full max-w-[1224px] mx-auto py-16 space-y-16">
       <div className="flex flex-col w-[90%] mx-auto items-start gap-2">
-        <h2 className={`font-heading-two font-[number:var(--heading-two-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[length:var(--heading-two-font-size)] tracking-[var(--heading-two-letter-spacing)] leading-[var(--heading-two-line-height)] whitespace-nowrap [font-style:var(--heading-two-font-style)]`}>
+        <h2 className={`font-heading-two font-[number:var(--heading-two-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[56px] md:text-[length:var(--heading-two-font-size)] tracking-[var(--heading-two-letter-spacing)] leading-[var(--heading-two-line-height)] whitespace-nowrap [font-style:var(--heading-two-font-style)]`}>
           Featured Projects
         </h2>
         <p className={`font-body-medium font-[number:var(--body-medium-font-weight)] ${isDarkMode ? 'text-neutraloffwhite' : 'text-neutraldark-gray'} text-[length:var(--body-medium-font-size)] tracking-[var(--body-medium-letter-spacing)] leading-[var(--body-medium-line-height)] [font-style:var(--body-medium-font-style)]`}>

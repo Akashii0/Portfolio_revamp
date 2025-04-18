@@ -30,7 +30,7 @@ export const Capabilities = ({ isDarkMode }) => {
           <div className="lg:w-1/3">
             <h2
               className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? "text-neutralwhite" : "text-neutralblack"
-                } text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}
+                } text-[86px] md:text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}
             >
             Capabilities
             </h2>
