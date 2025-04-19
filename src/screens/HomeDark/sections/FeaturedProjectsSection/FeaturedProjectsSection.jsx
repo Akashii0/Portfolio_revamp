@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Thought Chronicles",
     description: "A modern responsive and dynamic Blog webapp",
-    image: "/thoughtchronicles.png",
+    image: "/thoughtchronicles.jpg",
     year: "2024",
     role: "Backend Developer",
     githubLink: "https://github.com/Akashii0/Thought_Chronicles",
