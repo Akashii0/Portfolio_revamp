@@ -7,7 +7,7 @@ export const HeroSection = ({ isDarkMode }) => {
     <section className="w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-between py-32 gap-8">
       <div className="flex flex-col w-full lg:w-1/2 items-start gap-10">
         <div className="flex flex-col items-start gap-2 w-full">
-          <h1 className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[86px] md:text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] [font-style:var(--heading-one-font-style)]`}>
+          <h1 className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[76px] md:text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] [font-style:var(--heading-one-font-style)]`}>
             hi, i am <br />
             Raji Abdulhakeem.
           </h1>
