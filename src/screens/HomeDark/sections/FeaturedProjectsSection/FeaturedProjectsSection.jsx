@@ -11,7 +11,7 @@ const projects = [
     description: "A modern and responsive FastAPI powered webapp that Bulk Downloads Animes",
     image: "/otakutorrent.png",
     year: "2025",
-    role: "Full-Stack Developer",
+    role: "FullStack Developer",
     githubLink: "https://github.com/Akashii0/OtakuTorrent",
     liveDemoLink: ""
   },
@@ -23,16 +23,16 @@ const projects = [
     year: "2024",
     role: "Backend Developer",
     githubLink: "https://github.com/Akashii0/Thought_Chronicles",
-    liveDemoLink: "https://thought-chronicles.vercel.app"
+    liveDemoLink: ""
   },
   {
     id: 3,
-    title: "Bookmark Manager Landing Page",
-    description: "A modern and clean landing page design...",
-    image: "/desktop-active-states.png",
-    year: "2023",
-    role: "Front-end Developer",
-    githubLink: "",
+    title: "Fast-ToDo",
+    description: "A FastAPI powered ToDo webapp integrated with Oauth2 authentication",
+    image: "/fast-todo.png",
+    year: "2024",
+    role: "Fullstack Developer",
+    githubLink: "https://github.com/Akashii0/Fast-ToDo",
     liveDemoLink: ""
   },
 ];
@@ -60,7 +60,7 @@ export const FeaturedProjectsSection = ({ isDarkMode }) => {
                   project
                 </Badge>
                 <img
-                  className=" w-[490px] h-[351px]  object-cover"
+                  className=" w-[490px] h-[351px] rounded-xl object-cover"
                   alt={project.title}
                   src={project.image}
                 />
