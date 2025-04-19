@@ -4,10 +4,10 @@ import { Button } from "../../../../components/ui/button";
 
 export const HeroSection = ({ isDarkMode }) => {
   return (
-    <section className="container flex flex-col md:flex-row items-center justify-between py-32 gap-8">
-      <div className="flex flex-col w-full md:w-1/2 items-start gap-10">
+    <section className="w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-between py-32 gap-8">
+      <div className="flex flex-col w-full lg:w-1/2 items-start gap-10">
         <div className="flex flex-col items-start gap-2 w-full">
-          <h1 className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] [font-style:var(--heading-one-font-style)]`}>
+          <h1 className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[86px] md:text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] [font-style:var(--heading-one-font-style)]`}>
             hi, i am <br />
             Raji Abdulhakeem.
           </h1>
@@ -18,7 +18,7 @@ export const HeroSection = ({ isDarkMode }) => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <Button className="h-[54px] pl-6 pr-1.5 py-5 bg-brand-red rounded-[100px] text-neutralblack hover:bg-brand-red/90">
             <a
               href="/resume.pdf" // Link to your resume file in the public directory
@@ -76,9 +76,9 @@ export const HeroSection = ({ isDarkMode }) => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-end">
+      <div className="w-full lg:w-1/2 flex justify-end">
         <img
-          className="w-full max-w-[500px] h-auto object-cover rounded-[20px]"
+          className="w-full lg:max-w-[500px] h-auto object-cover rounded-[20px]"
           alt="Raji Abdulhakeem"
           src="/profile.jpg"
         />

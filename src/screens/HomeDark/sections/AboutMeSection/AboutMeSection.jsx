@@ -7,19 +7,19 @@ export const AboutMeSection = ({ isDarkMode }) => {
     <section className="relative w-full py-16">
       <Separator className={`absolute bottom-0 w-full ${isDarkMode ? 'bg-[#484848]' : 'bg-[#E5E5E5]'}`} />
 
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-8">
+      <div className="mx-auto w-[90%]">
+        <div className="flex flex-col lg:flex-row gap-8">
           <div className="md:w-1/3">
-            <h2 className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}>
+            <h2 className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[86px] md:text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}>
               About me
             </h2>
           </div>
 
-          <div className="md:w-2/3">
+          <div className="lg:w-2/3">
             <Card className="border-0 bg-transparent">
               <CardContent className="p-0 space-y-12">
-                <div className="flex flex-col gap-4">
-                  <h3 className={`font-heading-three font-[number:var(--heading-three-font-weight)] ${isDarkMode ? 'text-[#ffffff]' : 'text-neutralblack'} text-[length:var(--heading-three-font-size)] tracking-[var(--heading-three-letter-spacing)] leading-[var(--heading-three-line-height)] [font-style:var(--heading-three-font-style)]`}>
+                <div className="flex flex-col gap-4 w-full">
+                  <h3 className={`font-heading-three font-[number:var(--heading-three-font-weight)] ${isDarkMode ? 'text-[#ffffff]' : 'text-neutralblack'} text-2xl md:text-[length:var(--heading-three-font-size)] tracking-[var(--heading-three-letter-spacing)] leading-[var(--heading-three-line-height)] [font-style:var(--heading-three-font-style)]`}>
                   Backend developer focused on building fast, reliable, and scalable systems.
                   </h3>
 

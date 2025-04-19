@@ -25,18 +25,18 @@ export const Capabilities = ({ isDarkMode }) => {
           }`}
       />
 
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="md:w-1/3">
+      <div className=" mx-auto w-[90%]">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="lg:w-1/3">
             <h2
               className={`font-heading-one font-[number:var(--heading-one-font-weight)] ${isDarkMode ? "text-neutralwhite" : "text-neutralblack"
-                } text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}
+                } text-[86px] md:text-[length:var(--heading-one-font-size)] tracking-[var(--heading-one-letter-spacing)] leading-[var(--heading-one-line-height)] whitespace-nowrap [font-style:var(--heading-one-font-style)]`}
             >
             Capabilities
             </h2>
           </div>
 
-          <div className="md:w-2/3 space-y-5">
+          <div className="lg:w-2/3 space-y-5">
             <p
               className={`font-body-medium font-[number:var(--body-medium-font-weight)] ${isDarkMode ? 'text-neutraloffwhite' : 'text-neutraldark-gray'} text-[length:var(--body-medium-font-size)] tracking-[var(--body-medium-letter-spacing)] leading-[var(--body-medium-line-height)] [font-style:var(--body-medium-font-style)]`}
             >

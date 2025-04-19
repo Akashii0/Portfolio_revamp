@@ -11,7 +11,7 @@ const projects = [
     description: "A modern and responsive FastAPI powered webapp that Bulk Downloads Animes",
     image: "/otakutorrent.png",
     year: "2025",
-    role: "Full-Stack Developer",
+    role: "FullStack Developer",
     githubLink: "https://github.com/Akashii0/OtakuTorrent",
     liveDemoLink: ""
   },
@@ -23,16 +23,16 @@ const projects = [
     year: "2024",
     role: "Backend Developer",
     githubLink: "https://github.com/Akashii0/Thought_Chronicles",
-    liveDemoLink: "https://thought-chronicles.vercel.app"
+    liveDemoLink: ""
   },
   {
     id: 3,
-    title: "Bookmark Manager Landing Page",
-    description: "A modern and clean landing page design...",
-    image: "/desktop-active-states.png",
-    year: "2023",
-    role: "Front-end Developer",
-    githubLink: "",
+    title: "Fast-ToDo",
+    description: "A FastAPI powered ToDo webapp integrated with Oauth2 authentication",
+    image: "/fast-todo.png",
+    year: "2024",
+    role: "Fullstack Developer",
+    githubLink: "https://github.com/Akashii0/Fast-ToDo",
     liveDemoLink: ""
   },
 ];
@@ -41,8 +41,8 @@ const projects = [
 export const FeaturedProjectsSection = ({ isDarkMode }) => {
   return (
     <section id="work" className="w-full max-w-[1224px] mx-auto py-16 space-y-16">
-      <div className="flex flex-col w-full items-start gap-2">
-        <h2 className={`font-heading-two font-[number:var(--heading-two-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[length:var(--heading-two-font-size)] tracking-[var(--heading-two-letter-spacing)] leading-[var(--heading-two-line-height)] whitespace-nowrap [font-style:var(--heading-two-font-style)]`}>
+      <div className="flex flex-col w-[90%] mx-auto items-start gap-2">
+        <h2 className={`font-heading-two font-[number:var(--heading-two-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[56px] md:text-[length:var(--heading-two-font-size)] tracking-[var(--heading-two-letter-spacing)] leading-[var(--heading-two-line-height)] whitespace-nowrap [font-style:var(--heading-two-font-style)]`}>
           Featured Projects
         </h2>
         <p className={`font-body-medium font-[number:var(--body-medium-font-weight)] ${isDarkMode ? 'text-neutraloffwhite' : 'text-neutraldark-gray'} text-[length:var(--body-medium-font-size)] tracking-[var(--body-medium-letter-spacing)] leading-[var(--body-medium-line-height)] [font-style:var(--body-medium-font-style)]`}>
@@ -53,21 +53,21 @@ export const FeaturedProjectsSection = ({ isDarkMode }) => {
 
       <div className="space-y-16">
         {projects.map((project) => (
-          <div key={project.id} className="flex flex-row items-center gap-12">
-            <Card className={`relative w-[600px] h-[600px] ${isDarkMode ? 'bg-[#1a1a1a]' : 'bg-[#F5F5F5]'} rounded-xl overflow-hidden border-[#000000]`}>
-              <CardContent className="p-0 h-full">
+          <div key={project.id} className="flex flex-col lg:flex-row items-center gap-12">
+            <Card className={` relative lg:w-[600px] w-[90%] mx-auto h-[600px] ${isDarkMode ? 'bg-[#1a1a1a]' : 'bg-[#F5F5F5]'} rounded-xl overflow-hidden border-[#000000]`}>
+              <CardContent className="p-0 h-full flex justify-center items-center">
                 <Badge className={`absolute top-4 left-4 ${isDarkMode ? 'bg-neutral-950' : 'bg-white'} rounded-[100px] px-4 py-2 font-misc-tag font-[number:var(--misc-tag-font-weight)] ${isDarkMode ? 'text-neutralwhite' : 'text-neutralblack'} text-[length:var(--misc-tag-font-size)] tracking-[var(--misc-tag-letter-spacing)] leading-[var(--misc-tag-line-height)] [font-style:var(--misc-tag-font-style)]`}>
                   project
                 </Badge>
                 <img
-                  className="absolute w-[490px] h-[351px] top-[124px] left-[55px] object-cover"
+                  className=" w-[490px] h-[351px] rounded-xl object-cover"
                   alt={project.title}
                   src={project.image}
                 />
               </CardContent>
             </Card>
 
-            <div className="flex flex-col items-start gap-8 flex-1">
+            <div className="flex flex-col items-start gap-8 flex-1 w-[80%] mx-auto ">
               <div className="flex flex-col items-start gap-8 w-full">
                 <div className="flex flex-col gap-4 w-full">
                   <h3 className={`font-[number:var(--heading-three-font-weight)] ${isDarkMode ? 'text-[#ffffff]' : 'text-neutralblack'} text-[length:var(--heading-three-font-size)] leading-[var(--heading-three-line-height)] font-heading-three tracking-[var(--heading-three-letter-spacing)] [font-style:var(--heading-three-font-style)]`}>
